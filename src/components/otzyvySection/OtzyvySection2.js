@@ -143,45 +143,6 @@ export const OtzyvySection2 = () => {
 						<div className='flex'>
 							<div className=''>
 								<Avatar>
-									А
-								</Avatar>
-							</div>
-							<div className='ml-3 w-1/2'>
-								<p className='mb-0 text-lg'>Кравчинко Артём</p>
-								<p className='text-xs mb-1'>Mercedes Sprinter</p>
-								<p className='text-[10px] text-gray-400'>02.09.2021</p>
-								<Rate allowHalf defaultValue={5} />
-
-							</div>
-							<div className='w-1/4'>
-								<Image src='https://via.placeholder.com/150' className='rounded-sm' />
-							</div>
-						</div>
-						<div className='pl-6 mt-2'>
-							<p className='text-left text-sm mt-4'>
-								Заглох мой спринтер под Москвой. Звонил по московским эвакуаторам, цены космос, не знал что делать. Друг подсказал этих ребят, цена в три раза дешевле чем в Москве. Приехали, забрали, по дороге пообщались, Сергей очень приятный собеседник. Хороший сервис, приятные цены. Рекомендую.
-							</p>
-
-						</div>
-						<div className='pl-10 mt-6'>
-							<div className='flex'>
-								<Avatar icon={<UserOutlined />} size='small' />
-								<div className='ml-2'>
-									<p className='text-sm mb-0'>Александра</p>
-									<p className='text-[10px] text-gray-400'>администратор</p>
-								</div>
-							</div>
-							<div className='pl-8'>
-								<p className='text-xs text-gray-500 inline'>Спасибо за рекомендацию и отзыв. Безопасных Вам дорог.</p>
-							</div>
-						</div>
-					</div>
-
-
-					<div className='border-b py-4'>
-						<div className='flex'>
-							<div className=''>
-								<Avatar>
 									М
 								</Avatar>
 							</div>

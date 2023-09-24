@@ -32,7 +32,7 @@ export const MenuMobil = ({ onClose }) => {
 	return (
 		<div className='max-h-screen'>
 			<nav className='text-center flex flex-col justify-between'>
-				<ul className='h-[35vh] flex flex-col justify-between items-center text-lg text-orange-600 cursor-pointer'>
+				<ul className='h-[35vh] flex flex-col justify-between items-center text-lg text-[#fb4f41] cursor-pointer'>
 					<li>
 						<LinkScroll to='main'
 							smooth={true}
@@ -102,7 +102,7 @@ export const MenuMobil = ({ onClose }) => {
 					</li>
 				</ul>
 				<div className=''>
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab98fd9a6ed44e942ec5ec4e9879396aac8670a7655acb27d7325125f5e12dfc6&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab98fd9a6ed44e942ec5ec4e9879396aac8670a7655acb27d7325125f5e12dfc6&amp;source=constructor" width="100%" height="400" frameBorder="0"></iframe>
 				</div>
 
 				<div className='flex justify-between absolute bottom-3'>

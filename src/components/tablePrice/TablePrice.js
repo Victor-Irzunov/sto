@@ -282,7 +282,7 @@ const data = [
 				image:imageKoleso,
 			},
 			{
-				key: 1,
+				key: 2,
 				name: 'Заклейка колеса',
 				time: 'от 1:00',
 				price: "от 15,00",

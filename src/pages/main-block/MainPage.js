@@ -192,12 +192,12 @@ function MainPage() {
 									</Button>
 								</div>
 							</Col>
-							{/* {
+							{
 								!screens.xs &&
 								<Col lg={12} md={24} sm={24} xs={24}>
 									<div className='w-full h-full flex justify-center items-end mt-16'>
 										<div
-											className='bg-gradient-to-r from-orange-400 to-orange-600 w-full h-96 
+											className='bg-gradient-to-r from-blue-400 to-blue-600 w-full h-96 
 									rounded-3xl opacity-80 relative
 									overflow-hidden
 									'
@@ -224,7 +224,7 @@ function MainPage() {
 										</div>
 									</div>
 								</Col>
-							} */}
+							}
 						</Row>
 						{/* <div className={`${screens.xs ? 'mt-20' : 'mt-40'} flex justify-start ${screens.xs && 'pl-5'} ${screens.xs ? 'flex-col' : 'flex-wrap'}`}>
 
