@@ -55,7 +55,7 @@ export const HeaderMenu = ({ isVisible }) => {
 					// onChange={(affixed) => setIsAffix(affixed)}
 					>
 						<div
-							className={isAffix ? 'relative pt-2 pb-2 bg-[#313846]' : `relative pt-5 pb-2 bg-[#313846]`}
+							className={isAffix ? 'relative pt-1 pb-0 bg-[#313846]' : `relative pt-4 pb-1 bg-[#313846]`}
 						>
 							<div className='container'>
 								<nav>
@@ -136,7 +136,7 @@ export const HeaderMenu = ({ isVisible }) => {
 									initial={{ opacity: 0 }}
 									animate={{ opacity: 1 }}
 									exit={{ opacity: 0 }}
-									className={`pt-2 pb-2 bg-[#fff] shadow-xl fixed top-0 left-0 right-0 z-10`}
+									className={`pt-2 pb-1 bg-[#fff] shadow-xl fixed top-0 left-0 right-0 z-10`}
 								>
 									<div className='fixed top-3 left-1 p-3 z-50'>
 										{/* <Popover placement="rightTop" title={text} content={content} trigger="click">
@@ -154,7 +154,7 @@ export const HeaderMenu = ({ isVisible }) => {
 							)}
 						</AnimatePresence>
 
-						<div className='fixed top-2 right-2 p-3 border z-50'>
+						<div className='fixed top-4 right-3 z-50'>
 							<MenuOutlined
 								className='text-4xl text-[#fb4f41]'
 								onClick={() => showDrawer('right', 'Меню', 'menu')}

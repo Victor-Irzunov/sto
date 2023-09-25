@@ -1,8 +1,6 @@
-import { Button } from 'antd'
 import React, { useState, useContext } from 'react'
 import { DrawerComp } from '../drawerComp/DrawerComp'
 import { Context } from '../../App'
-
 
 export const FooterSection = () => {
 	const [open, setOpen] = useState(false)
@@ -14,8 +12,6 @@ export const FooterSection = () => {
 		date: false,
 		menu: false,
 	})
-
-
 	const showDrawer = (position, title, str) => {
 		setOpen(true)
 		setPlacement(position)
@@ -28,12 +24,10 @@ export const FooterSection = () => {
 		}
 	}
 
-
-
 	return (
 		<section className=' w-full z-10 relative' id='contact'>
 			<div className={data ? 'fon2-mobile' : 'fon2'}>
-				<div className='container text-center pt-7 pb-2'>
+				<div className='container mx-auto text-center pt-7 pb-2'>
 					<div className=''>
 						<h2 className='text-xl text-white uppercase tracking-wider'>
 							Качественное<span className='text-[#fb4f41]'> СТО</span>  в Минске
@@ -44,27 +38,51 @@ export const FooterSection = () => {
 							Предлагаем профессональную диагностику и качественный ремонт Вашего автомобиля.</p>
 					</div>
 
-					<h3 className='text-white  font-light uppercase'>Записаться на ремонт</h3>
+					<h3 className='text-white  font-light uppercase mt-5'>Записаться на ремонт</h3>
 
-					<div className='text-[#fb4f41] mb-6 mt-5'>
-						<a href='tel:8029' className='text-4xl'>+375 (29) 000-00-00 </a>
-						{/* <p className=''>
-						+375 29 278-08-78
-					</p> */}
+					<div className='text-[#fb4f41] mb-6 text-center w-full'>
+						<div className=''>
+
+							<a href='tel:80299402790' className='text-3xl'>+375 29 940-27-90</a>
+
+						</div>
+						<div className='mt-3'>
+
+							<a href='tel:80298781511' className='text-3xl'>+375 29 878 15 11</a>
+
+						</div>
 					</div>
 
-					{/* <div className='text-white'>
-						<p className='text-xs uppercase'>
-							запишитесь заранее на определёное время и получите скидку<span className='text-orange-500 text-sm'> 5%</span> на ремонт Вашего автомобиля.
+					<div className='text-white font-light mt-10 text-sm'>
+						<p className='uppercase font-semibold'>
+							Наши реквизиты
 						</p>
-						<Button
-							type='primary'
-							className='uppercase'
-							onClick={() => showDrawer('right', 'Записаться на дату', 'date')}
-						>
-							Записаться
-						</Button>
-					</div> */}
+						<p className=''>
+							ООО "АвтоСтройФорсаж"
+						</p>
+						<p className=''>
+							220099 Республика Беларусь
+						</p>
+						<p className=''>
+							г. Минск ул. Лейтенанта Кижеватова дом 8 пом. 1
+						</p>
+						<p className=''>
+							УНП 193686306
+						</p>
+						<p className=''>
+							р/с BY67MTBK 3012 0001 0933 0011 9921
+						</p>
+						<p className=''>
+							в ЗАО "МТБанк" БИК МТВКBY2X
+						</p>
+						<p className=''>
+							директор Купрейчик В.В.
+						</p>
+						<p className=''>
+							forsageavto@gmail.com
+						</p>
+
+					</div>
 
 					<div className="
     w-full 
@@ -89,7 +107,7 @@ export const FooterSection = () => {
     text-gray-400/50
 		mb-0 leading-3 pt-1
       ">
-							Copyright Ⓒ 2018-2023. Created & Designed By
+							Copyright Ⓒ 2018-2023. Разработка и продвижение
 							<a href="https://vi-tech.by" className="text-cyan-500" target="_blank"> VI:TECH</a>
 							. &nbsp; Все права защищены. Информация на сайте не является публичной офертой.
 						</p>

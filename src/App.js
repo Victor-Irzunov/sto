@@ -12,6 +12,7 @@ import VoprosOtvet from './pages/VoprosOtvet'
 import { OtzyvySection2 } from './components/otzyvySection/OtzyvySection2'
 import { FooterSection } from './components/footerSection/FooterSection'
 import { Evakuator } from './components/evakuator/Evakuator'
+import ContenPriceSection from './components/contenPriceSection/ContenPriceSection'
 
 
 export const Context = createContext()
@@ -52,6 +53,8 @@ function App() {
             <OtzyvySection2 />
 
             <VoprosOtvet />
+
+            <ContenPriceSection />
           </main>
 
           <FooterSection />

@@ -24,7 +24,7 @@
 	/* background-color: #f03226; */
 	background-color: #2db9fb;
 	background-image: none;
-
+color: #000;
 }
 
  svg,
@@ -74,12 +74,12 @@ img{
  }
 
  
- .ant-table-tbody>tr.ant-table-row:hover>td, .ant-table-tbody>tr>td.ant-table-cell-row-hover{
+ /* .ant-table-tbody>tr.ant-table-row:hover>td, .ant-table-tbody>tr>td.ant-table-cell-row-hover{
 	background: var(--hov) !important;
  }
  tr.ant-table-expanded-row:hover>td {
 	background: var(--hov) !important;
-}
+} */
 
 .ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow svg{
 	color: #fff;

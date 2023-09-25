@@ -20,7 +20,7 @@ import { ModalComp } from '../../components/modal/ModalComp'
 function MainPage() {
 	const { data } = useContext(Context)
 	const screens = useScreens()
-	const [active, setActive] = useState(1)
+	const [active, setActive] = useState(2)
 	const [open, setOpen] = useState(false)
 	const [isModalOpen, setIsModalOpen] = useState(false)
 	const [title, setTitle] = useState('')
@@ -28,11 +28,11 @@ function MainPage() {
 	const showModal = (title) => {
 		setIsModalOpen(true)
 		setTitle(title)
-	 };
-  
-	 const handleCancel = () => {
+	};
+
+	const handleCancel = () => {
 		setIsModalOpen(false)
-	 };
+	};
 
 	const scroll = () => {
 		setTimeout(() => window.scrollBy({
@@ -96,13 +96,13 @@ function MainPage() {
 				<div className={data ? 'main-block-mobile' : 'main-block'}>
 					<div className='container mx-auto pb-32'>
 						<Row gutter={[10, 10]} className=''>
-							<Col lg={12} md={24} sm={24} xs={24}
+							<Col lg={16} md={24} sm={24} xs={24}
 								className={`mt-16 text-left text-white`}
 							>
 								<h1 className={`${screens.xs ? 'text-[4em]' : 'text-[5em]'} mb-0`}>
-									СТО в Минске<br />
+									Автосервис в Минске
 								</h1>
-								<h2 className='font-semibold uppercase mt-1 mb-11 text-lg xz:pl-2 sd:pl-0'>
+								<h2 className='font-semibold uppercase mt-4 mb-11 text-2xl xz:pl-2 sd:pl-0'>
 									Шиномонтаж
 								</h2>
 								<Space className='mb-9' size={[15]}>
@@ -131,13 +131,13 @@ function MainPage() {
 									</Button>
 								</Space>
 								{active === 1 &&
-									<div className='flex flex-col text-lg'>
-										<a href='tel:80290000000'
+									<div className='flex flex-col text-lg pl-4'>
+										<a href='tel:80299402790'
 											className='mb-6 text-white text-xl hover:text-[#2db9fb]'
-											onClick={() => window.gtag_report_conversion('tel:80290000000')}
+										// onClick={() => window.gtag_report_conversion('tel:80299402790')}
 										>
 											<Tooltip title="A1">
-												+375 29 000-00-00 
+												+375 29 940-27-90
 											</Tooltip>
 											<Button type="primary"
 												shape="circle" size='large'
@@ -145,8 +145,6 @@ function MainPage() {
 												icon={<PhoneOutlined className='animate-pulse' />}
 											/>
 										</a>
-
-
 										<div className='text-left'>
 											<p
 												className='uppercase text-base text-[#2db9fb] cursor-pointer'
@@ -159,24 +157,24 @@ function MainPage() {
 								}
 								{
 									active === 2 &&
-									<div className='text-white text-lg'>
+									<address className='text-white text-lg pl-4'>
 										<p>г. Минск</p>
-										<p><span className='font-thin text-sm'>микрорайон</span> Центральный</p>
-										<p>ул. Минская 100</p>
-										<Button type='link' href='https://yandex.by/maps/-/CCU9EErX~D' className='text-[#2db9fb]' style={{ paddingLeft: '0' }} target='_blank'>Посмотреть на карте</Button>
-									</div>
+										<p>Партизанский район</p>
+										<p>ул. Радиальная 27а</p>
+										<Button type='link' href='https://yandex.by/maps/-/CDUKMMm7' className='text-[#2db9fb]' style={{ paddingLeft: '0' }} target='_blank'>Посмотреть на карте</Button>
+									</address>
 								}
 								{
 									active === 3 &&
-									<div className=''>
+									<div className='pl-4'>
 										<Space direction="vertical" >
-											<Badge status="error" style={{ color: '#f03226' }} text="Пн: выходной" />
-											<Badge status="success" style={{ color: '#fff' }} text="Вт: 9:00-18:00" />
+											<Badge status="success" style={{ color: '#fff' }} text="Пн: 9:00-19:00" />
+											<Badge status="success" style={{ color: '#fff' }} text="Вт: 9:00-19:00" />
 											<Badge status="success" style={{ color: '#fff' }} text="Ср: 9:00-18:00" />
 											<Badge status="success" style={{ color: '#fff' }} text="Чт: 9:00-18:00" />
 											<Badge status="success" style={{ color: '#fff' }} text="Пт: 9:00-18:00" />
-											<Badge status="success" style={{ color: '#fff' }} text="Сб: 10:00-16:00" />
-											<Badge status="success" style={{ color: '#fff' }} text="Вс: 10:00-16:00" />
+											<Badge status="error" style={{ color: '#f03226' }} text="Сб: выходной" />
+											<Badge status="error" style={{ color: '#f03226' }} text="Вс: выходной" />
 										</Space>
 									</div>
 								}
@@ -194,7 +192,7 @@ function MainPage() {
 							</Col>
 							{
 								!screens.xs &&
-								<Col lg={12} md={24} sm={24} xs={24}>
+								<Col lg={8} md={24} sm={24} xs={24}>
 									<div className='w-full h-full flex justify-center items-end mt-16'>
 										<div
 											className='bg-gradient-to-r from-blue-400 to-blue-600 w-full h-96 
@@ -214,7 +212,7 @@ function MainPage() {
 										absolute t-[50%]
 										bottom-[35%]
 										left-5  font-bold'>
-												<p className={`text-white ${screens.xs && 'text-3xl'}  ${screens.sm && 'text-4xl'} ${screens.xl && 'text-4xl'}`}>Опыт работы 10+ лет</p>
+												<p className={`text-white ${screens.xs && 'text-3xl'}  ${screens.sm && 'text-2xl'} ${screens.xl && 'text-2xl'}`}>Опыт работы 10+ лет</p>
 												<p className='text-white text-2xl'>Дружелюбный персонал</p>
 												<p className='text-white text-xl'>Акции и скидки</p>
 												<p className='text-white text-sm'>Гарантия</p>

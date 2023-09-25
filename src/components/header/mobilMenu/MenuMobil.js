@@ -56,17 +56,6 @@ export const MenuMobil = ({ onClose }) => {
 						</LinkScroll>
 					</li>
 					<li>
-						<LinkScroll to='evakuator'
-							smooth={true}
-							offset={-100}
-							duration={800}
-							className="cursor-pointer"
-							onClick={onClose}
-						>
-							Эвакуатор
-						</LinkScroll>
-					</li>
-					<li>
 						<LinkScroll to='otzyvy'
 							smooth={true}
 							offset={-100}
@@ -102,7 +91,7 @@ export const MenuMobil = ({ onClose }) => {
 					</li>
 				</ul>
 				<div className=''>
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab98fd9a6ed44e942ec5ec4e9879396aac8670a7655acb27d7325125f5e12dfc6&amp;source=constructor" width="100%" height="400" frameBorder="0"></iframe>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A71eb39e88f70668156d37b8eea3f6194285f9afdd05cbff0a87052917282fa8b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
 				</div>
 
 				<div className='flex justify-between absolute bottom-3'>

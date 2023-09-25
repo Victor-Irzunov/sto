@@ -52,8 +52,8 @@ const data = [
 		id: 9,
 	},
 	{
-		title: 'Я очень довольна Вашими услугами, особенно мастером, где можно оставить отзыв?',
-		text: 'Отзыв Вы можете оставить...',
+		title: 'Где можно оставить отзыв?',
+		text: 'Отзыв Вы можете оставить на сайте.',
 		id: 10,
 	},
 ]
@@ -70,7 +70,7 @@ const CollapseComp = () => {
 					<Panel header={<span className='text-white'>{el.title}</span>} key={el.id} >
 						<div className={`${screens.xs ? 'pl-2' : 'pl-6'}`}>
 							<CommentOutlined style={{ color: 'rgb(203 213 225)', fontSize: '1.2em' }} />
-							<span className='text-slate-400 ml-3'>{el.text}</span>
+							<span className='text-white/90 ml-3'>{el.text}</span>
 						</div>
 					</Panel>
 				)
