@@ -55,7 +55,7 @@ export const HeaderInfo = ({ setIsVisible }) => {
 								<p className='text-sm mb-1'>Напишите нам</p>
 								<div>
 									<a href='https://t.me/@' rel="noreferrer" target='_blank'><Image src={telegram} style={{ width: '30px' }} preview={false} /></a>
-									<a href='viber://chat?number=%2B37529' rel="noreferrer" target='_blank'><Image src={viber} preview={false} style={{ width: '30px', marginLeft: '16px' }} /></a>
+									<a href='viber://chat?number=%2B375298781511' rel="noreferrer" target='_blank'><Image src={viber} preview={false} style={{ width: '30px', marginLeft: '16px' }} /></a>
 								</div>
 							</div>
 						</div>
@@ -86,7 +86,7 @@ export const HeaderInfo = ({ setIsVisible }) => {
 								</p>
 								<div>
 									<a href='https://t.me/@' rel="noreferrer" target='_blank'><Image src={telegram} preview={false} style={{ width: '30px' }} /></a>
-									<a href='viber://chat?number=%2B37529' rel="noreferrer" target='_blank'><Image src={viber} preview={false} style={{ width: '30px', marginLeft: '1.5em' }} /></a>
+									<a href='viber://chat?number=%2B375298781511' rel="noreferrer" target='_blank'><Image src={viber} preview={false} style={{ width: '30px', marginLeft: '1.5em' }} /></a>
 								</div>
 							</div>
 

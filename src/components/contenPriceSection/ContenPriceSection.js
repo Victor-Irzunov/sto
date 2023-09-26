@@ -4,9 +4,6 @@ const ContenPriceSection = () => {
 	return (
 		<div className='bg-white font-light py-12'>
 			<div className='container px-1'>
-
-
-
 				<h4 className='xz:text-xl sd:text-2xl font-bold'>
 					Немного про ремонт автомобиля на СТО
 				</h4>
