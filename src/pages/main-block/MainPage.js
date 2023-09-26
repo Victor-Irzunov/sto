@@ -83,9 +83,9 @@ function MainPage() {
 				>
 					<Popconfirm
 						placement="leftBottom"
-						title='Остались вопросы? Позвоните нам и мы ответим.'
+						title='Остались вопросы? Позвоните нам!'
 						onConfirm={confirm}
-						okText={<a href='tel:80290000000'>Позвонить</a>}
+						okText={<a href='tel:80299402790'>Позвонить</a>}
 						cancelText="Закрыть"
 					>
 						<FloatButton icon={<QuestionCircleOutlined />} />

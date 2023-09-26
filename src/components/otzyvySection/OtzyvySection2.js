@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Popover, Rate, Avatar, Image } from 'antd'
-import { ExclamationCircleOutlined, LineOutlined, UserOutlined } from '@ant-design/icons'
+import { ExclamationCircleOutlined, ExclamationOutlined, LineOutlined, UserOutlined } from '@ant-design/icons'
 import { FormOtzyvy } from '../form2/FormOtzyvy'
 // import img1 from '../../images/portfolio/12.webp'
 
@@ -19,12 +19,12 @@ export const OtzyvySection2 = () => {
 	return (
 		<section className='py-12 w-full z-10 bg-white min-h-[60vh]' id='otzyvy'>
 			<div className='container px-10'>
-				<div className='text-center mb-12'>
+				<div className='text-center sd:mb-12 xz:mb-5'>
 					<h5 className='text-4xl text-[#2db9fb] uppercase'>Наши<span className='text-black'> отзывы</span></h5>
 					<LineOutlined style={{ color: '#2db9fb', fontSize: '3rem' }} />
 				</div>
 
-				<p className='text-black mt-6 text-center'>
+				<p className='text-black  text-center'>
 					Узнать, что о нас думают наши клиенты, - это важная часть нашей работы. Мы гордимся положительными отзывами и благодарны за доверие, которое нам оказывают наши клиенты. Вот лишь несколько из сотни отзывов, которые мы получили за годы нашей деятельности:
 				</p>
 				<div className='mt-20'>
@@ -206,7 +206,7 @@ export const OtzyvySection2 = () => {
 					>
 
 						<Popover content={content} title={<div className='text-center'><ExclamationCircleOutlined className='text-2xl text-orange-500 ml-3' /></div>} trigger="click">
-							<ExclamationCircleOutlined className='text-xl mr-5 text-[#2db9fb]' />
+							<ExclamationOutlined className='text-xl mr-5 text-[#2db9fb]' />
 						</Popover>
 						<Button onClick={() => setAdd(true)}>Добавить отзыв</Button>
 					</div>

@@ -3,7 +3,7 @@ import React from 'react'
 const ContenPriceSection = () => {
 	return (
 		<div className='bg-white font-light py-12'>
-			<div className='container mx-auto'>
+			<div className='container px-1'>
 
 
 

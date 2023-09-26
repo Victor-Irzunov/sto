@@ -32,7 +32,7 @@ export const MenuMobil = ({ onClose }) => {
 	return (
 		<div className='max-h-screen'>
 			<nav className='text-center flex flex-col justify-between'>
-				<ul className='h-[35vh] flex flex-col justify-between items-center text-lg text-[#fb4f41] cursor-pointer'>
+				<ul className='h-[30vh] uppercase flex flex-col justify-between items-center text-lg cursor-pointer'>
 					<li>
 						<LinkScroll to='main'
 							smooth={true}
@@ -52,7 +52,7 @@ export const MenuMobil = ({ onClose }) => {
 							className="cursor-pointer"
 							onClick={onClose}
 						>
-							Цены
+							Услуги
 						</LinkScroll>
 					</li>
 					<li>
@@ -74,7 +74,7 @@ export const MenuMobil = ({ onClose }) => {
 							className="cursor-pointer"
 							onClick={onClose}
 						>
-							Вопросы
+							Вопрос-ответ
 						</LinkScroll>
 					</li>
 				
@@ -90,7 +90,7 @@ export const MenuMobil = ({ onClose }) => {
 						</LinkScroll>
 					</li>
 				</ul>
-				<div className=''>
+				<div className='mt-3'>
 				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A71eb39e88f70668156d37b8eea3f6194285f9afdd05cbff0a87052917282fa8b&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
 				</div>
 
